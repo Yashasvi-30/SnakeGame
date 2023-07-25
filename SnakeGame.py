@@ -1,22 +1,23 @@
-#Import the following libraries 
+# Importing the libraries 
 import pygame
 import time
 import random
 
-#Initializing the pygame
+# Initializing the pygame
 pygame.init()
 
-#Dimension of window of the game 
+# Dimension of window
 width = 600
 height = 400
 
-# Creating the game window 
-# Also setting up the title and icon 
-
+# Creating the game window
 screen = pygame.display.set_mode((width, height))
 
+# Setting th Title and icon
 pygame.display.set_caption('Snake Game')
 
+
+# Frames per second controller
 c = pygame.time.Clock()
 
 snake_block = 10
@@ -69,7 +70,7 @@ def gameLoop():
 
         while game_close == True:
             screen.fill((0, 0, 0))
-            message("You Lost!Try Again?", (255, 0, 0))
+            message("You Lost!Try Again ?", (255, 0, 0))
             pygame.display.update()
 
         #Loop for events
@@ -136,7 +137,6 @@ def gameLoop():
 
 
 gameLoop()
-
 
 
 #created by Yashasvi Gupta 
